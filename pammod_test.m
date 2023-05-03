@@ -3,7 +3,7 @@ clc
 %% paramter definitions
 N = 1e5;   % number of input bits
 M = 32;      % modulatioin order
-n = log2(M);    % number of bits per symbol
+n = log2(M);    % number of bits per symbol``
 n_sym = floor(N/n);
 N_bit = n_sym * n;
 data = randi([0, 1], 1, N_bit);
