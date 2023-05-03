@@ -17,6 +17,7 @@ signal = pammod(data_dec, M);
 %% receiver
 SNR = 0:15;
 
+% BER vs. SNR
 for snr_index = 1:length(SNR)
     signal_noisy = awgn(signal, SNR(snr_index), 'measured');
     sym_demod = pamdemod(signal_noisy, M);
